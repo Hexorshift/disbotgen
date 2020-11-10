@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+$body-background-color: #2c2f33;
+$primary: #23272a;
+$danger: #7289da;
+$input-placeholder-color: #ffffff;
+$input-focus-border-color: none;
+
+@import "../../node_modules/bulma/bulma.sass";
+
+html,
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+input:focus,
+.input:focus,
+select:focus,
+textarea:focus,
+.textarea:focus,
+button:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+input::placeholder,
+.input::placeholder,
+select::placeholder,
+textarea::placeholder,
+.textarea::placeholder,
+button::placeholder {
+  font-size: 13px;
+}
